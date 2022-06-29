@@ -193,9 +193,7 @@ li{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 10%;
-    gap: 10px;
-  }
-
+    gap: 10px;}
 /*  -------------------------------PROPIEDADES DE TEXTO PARA PC-------------------------------  */
 
 @media (min-width:1024px){
