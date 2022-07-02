@@ -77,13 +77,6 @@ a {
     text-align: center;
     font-family: 'Dancing Script', cursive;
 }
-.contactos{
-  color: rgb(117, 42, 42);
-  }
-#video{
-    max-width: 100%;
-    max-height: auto;
-  }
 .fondo{
   background-image: url(../Img/cuero.jpg);
   height: 100%;}
@@ -153,10 +146,6 @@ p{
     font-family: 'Dancing Script', cursive;
     font-family: 'Oswald', sans-serif;
   }
-.parrafo__Contactos{
-    color:rgb(216, 155, 155) ;
-    list-style-type: square;
-  }
 
 /* --------------------------Listas En General-------------------------- */
 
@@ -189,11 +178,7 @@ li{
     width: 100vw;
     height: 30%;
   }
-.articulos__Index{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 10%;
-    gap: 10px;}
+
 /*  -------------------------------PROPIEDADES DE TEXTO PARA PC-------------------------------  */
 
 @media (min-width:1024px){
@@ -208,9 +193,6 @@ li{
   .enlaces__Articulos{
     font-size: 25px;
     margin: 20px;
-  }
-  .contactos{
-  font-size: 25px;
   }
   footer{
     font-size: 25px;
@@ -245,15 +227,9 @@ li{
     margin-top: 20px;
     margin-bottom: 80px;
   }
-  .parrafo__Contactos{
-    font-size: 25px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 60px;
-  }
 
   /* --------------------------Listas En PC-------------------------- */
+
   li{
     font-size: 25px;
   }
@@ -279,61 +255,6 @@ li{
     margin-right: 90px;
     margin-top: 30px;
     margin-bottom: 20px;
-  }
-
-   /* --------------------------Articulos Del Index En PC-------------------------- */
-
-   .articulos__Index{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 5%;
-  margin: 5% 15% 5% 15%;
-  height: 700px;
- }
-  .promo1{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    grid-row: 1/3;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo2{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo3{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo4{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo5{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    font-size: 20px;
-    grid-row: 2/4;
-    grid-column: 3/4;
-    text-align: center;
-  }
-  .promo6{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo7{
-    background: linear-gradient(70deg, rgb(80, 41, 77), rgb(122, 122, 206));
-    color: black;
-    font-size: 20px;
-    text-align: center;
   }
 
 /* --------------------------Articulos De Lubricantes en PC-------------------------- */
@@ -384,9 +305,6 @@ li{
     font-size: 18px;
     margin: 20px;
   }
-  .contactos{
-  font-size: 20px;
-  }
   footer{
     font-size: 18px;
     margin-top: 20px;
@@ -420,13 +338,6 @@ li{
     margin-top: 20px;
     margin-bottom: 80px;
   }
-  .parrafo__Contactos{
-    font-size: 18px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 60px;
-  }
 
     /* --------------------------Listas En Tablets-------------------------- */
 
@@ -453,59 +364,6 @@ li{
     margin-right: 90px;
     margin-top: 30px;
     margin-bottom: 20px;
-  }
- /* --------------------------Articulos Del Index En Tablets-------------------------- */
- .articulos__Index{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 3%;
-  margin: 5%;
-  height: 300px;
- }
-  .promo1{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));
-    color: black;
-    grid-row: 1/3;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo2{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo3{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo4{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo5{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));  
-    color: black;
-    font-size: 20px;
-    grid-row: 2/4;
-    grid-column: 3/4;
-    text-align: center;
-  }
-  .promo6{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));
-    color: black;
-    font-size: 20px;
-    text-align: center;
-  }
-  .promo7{
-    background: linear-gradient(70deg, rgb(104, 75, 80), rgb(118, 118, 219));
-    color: black;
-    font-size: 20px;
-    text-align: center;
   }
 
   /* --------------------------Articulos De Lubricantes en Tablets-------------------------- */
@@ -552,9 +410,6 @@ li{
     font-size: 14px;
     margin: 20px;
   }
-  .contactos{
-  font-size: 14px;
-  }
   .logo{
     width: 60px;
   }
@@ -593,13 +448,6 @@ li{
     margin-top: 20px;
     margin-bottom: 80px;
   }
-  .parrafo__Contactos{
-    font-size: 14px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 60px;
-  }
 
     /* --------------------------Listas En Celulares-------------------------- */
 
@@ -637,53 +485,6 @@ li{
   .lubricantes{
     width: 100%;
     height: 100%;
-  }
- /* --------------------------Articulos Del Index En Celular-------------------------- */
- .articulos__Index{
-  display: grid;
-  grid-template-columns: 30% 30% 30%;
-  gap: 3%;
-  margin: 5%;
-  height: 300px;
-
- }
-  .promo1{
-    background: linear-gradient(70deg, rgb(105, 45, 55), rgb(82, 82, 172));
-    color: black;
-    grid-row: 1/3;
-    font-size: 20px;
-  }
-  .promo2{
-    background: linear-gradient(45deg, rgb(105, 45, 55), rgb(82, 82, 172));
-    color: black;
-    font-size: 20px;
-  }
-  .promo3{
-    background: linear-gradient(45deg, rgb(105, 45, 55), rgb(82, 82, 172));
-    color: black;
-    font-size: 20px;
-  }
-  .promo4{
-    background: linear-gradient(45deg, rgb(105, 45, 55), rgb(82, 82, 172));
-    color: black;
-    font-size: 20px;
-  }
-  .promo5{
-    background: linear-gradient(45deg, rgb(105, 45, 55), rgb(82, 82, 172));  
-    color: black;
-    font-size: 20px;
-    grid-row: 2/4;
-    grid-column: 3/4;
-  }
-  .promo6{
-    background: linear-gradient(45deg, rgb(105, 45, 55), rgb(82, 82, 172));
-    color: black;
-    font-size: 20px;
-  }
-  .promo7{
-    background: linear-gradient(45deg, rgb(105, 45, 55), rgb(82, 82, 172));
-    color: black;
-    font-size: 20px;
   }
 
   /* --------------------------Articulos De Lubricantes en Celulares-------------------------- */
