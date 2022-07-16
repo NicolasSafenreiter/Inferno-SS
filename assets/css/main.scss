@@ -1,0 +1,156 @@
+*,
+
+*::after,
+
+*::before {
+
+  margin: 0;
+
+  padding: 0;
+
+ box-sizing: border-box;
+
+}
+
+html {
+
+  font-family: "Inter", sans-serif;
+
+  color: gray;
+
+  margin: 0%;
+
+  padding: 0%;
+
+}
+
+body {
+
+  margin: 0%;
+
+  padding: 0%;
+
+  background-color: #fff;
+
+  font-family: 'Shippori Antique B1', sans-serif;
+
+  font-size: 16px;
+
+ writing-mode: horizontal-tb;
+
+}
+
+a {
+
+  list-style-type: none;
+
+  text-decoration: none;
+
+ color: #0b0c0d;
+
+}
+@import "variables"; 
+
+@media (min-width: 1024px){
+.fondo{
+    background-image: url(../Img/cuero.jpg);
+    height: 100%;
+    .titulo__Pincipal{
+        @include titulosPrincipal;
+        color: $colorTitulos;
+        background-color: $bgcFondoTitulos;
+        font-size: 50px;
+        .barra__Inicio{
+            @include barraDeInicio;
+            p{                
+                .enlaces__Navegacion{
+                    font-size: 18px;
+                    margin: 5% 18% 5% 18%;
+                    @include enlacesNavegacion;
+                }
+            }   
+        }
+    }
+    .segundo__Titulo{
+        @include segundoTitulo;
+        font-size: 40px;
+    }
+    .parrafo__Index{
+        @include marginPC;
+        @include fuenteParrafos;
+        font-size: 18px;
+        color: $colorParrafo;
+    }
+    footer{
+        font-size: 18px;
+        margin: 5% 18% 5% 18%;
+    }
+}
+}
+@media (min-width:720px) and (max-width:1024px){
+    .fondo{
+        background-image: url(../Img/cuero.jpg);
+        height: 100%;
+        .titulo__Pincipal{
+            @include titulosPrincipal;
+            font-size: 40px;
+            .barra__Inicio{
+                @include barraDeInicio;
+                .logo{
+                    width: 80px;
+                }
+                .enlaces__Navegacion{
+                    font-size: 16px;
+                    margin: 5% 18% 5% 18%;
+                }
+            }
+        }
+        .segundo__Titulo{
+            @include segundoTitulo;
+            font-size: 30px;
+        }
+        .parrafo__Index{
+            @include parrafosTablets;
+            @include fuenteParrafos;
+            font-size: 16px;
+        }
+        footer{
+            font-size: 16px;
+            margin: 5% 18% 5% 18%;
+        }
+    }
+
+}
+@media (min-width:320px) and (max-width:720px){
+    .fondo{
+        background-image: url(../Img/cuero.jpg);
+        height: 100%;
+        .titulo__Pincipal{
+            @include titulosPrincipal;
+            font-size: 30px;
+            .barra__Inicio{
+                @include barraDeInicio;
+                .logo{
+                    width: 60px;
+                }
+                .enlaces__Navegacion{
+                    font-size: 14px;
+                    margin: 5% 18% 5% 18%;
+                }
+            }
+        }
+        .segundo__Titulo{
+            @include segundoTitulo;
+            font-size: 20px;
+        }
+        .parrafo__Index{
+            @include parrafoCelulares;
+            @include fuenteParrafos;
+            font-size: 14px;
+        }
+        footer{
+            font-size: 14px;
+            margin: 5% 18% 5% 18%;
+        }
+    }
+}
