@@ -50,107 +50,183 @@ a {
 
 }
 @import "variables"; 
-
+/* ---------------------PC--------------------- */
 @media (min-width: 1024px){
-.fondo{
-    background-image: url(../Img/cuero.jpg);
-    height: 100%;
-    .titulo__Pincipal{
-        @include titulosPrincipal;
-        color: $colorTitulos;
-        background-color: $bgcFondoTitulos;
-        font-size: 50px;
+    .fondo{
+        background-image: url(../Img/cuero.jpg);
+        height: 100%;
+        .titulo__Principal{
+            @include titulosPrincipal;
+            font-size: 50px;}
         .barra__Inicio{
             @include barraDeInicio;
-            p{                
+            p{      
+                .logo{
+                    width: 100%;
+                }          
                 .enlaces__Navegacion{
-                    font-size: 18px;
+                    font-size: 24px;
                     margin: 5% 18% 5% 18%;
                     @include enlacesNavegacion;
-                }
-            }   
+                    }
+                }   
+            }
+        .segundo__Titulo{
+            @include segundoTitulo;
+            font-size: 40px;
+        }
+        .parrafo{
+            @include marginPC;
+            @include fuenteParrafos;
+            font-size: 24px;
+            color: $colorParrafo;
+        }
+        ul{
+            .lista{
+                @include listasPC;
+            }
+        }
+        .articulos{
+            @include articulosPC;
+            @include marginPC;
+            gap: 10%;
+            font-size: 25px;
+            .lubricante1{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante2{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante3{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante4{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+        }
+        footer{
+            @include footer;
+            font-size: 24px;
+            margin: 5% 18% 5% 18%;
         }
     }
-    .segundo__Titulo{
-        @include segundoTitulo;
-        font-size: 40px;
-    }
-    .parrafo__Index{
-        @include marginPC;
-        @include fuenteParrafos;
-        font-size: 18px;
-        color: $colorParrafo;
-    }
-    footer{
-        font-size: 18px;
-        margin: 5% 18% 5% 18%;
-    }
 }
-}
+/* ---------------------Tablets--------------------- */
 @media (min-width:720px) and (max-width:1024px){
     .fondo{
         background-image: url(../Img/cuero.jpg);
         height: 100%;
-        .titulo__Pincipal{
+        .titulo__Principal{
             @include titulosPrincipal;
             font-size: 40px;
-            .barra__Inicio{
-                @include barraDeInicio;
-                .logo{
-                    width: 80px;
+        }
+        .barra__Inicio{
+            @include barraDeInicio;
+            .logo{
+                width: 80px;
                 }
-                .enlaces__Navegacion{
-                    font-size: 16px;
-                    margin: 5% 18% 5% 18%;
-                }
+            .enlaces__Navegacion{
+                @include enlacesNavegacion;
+                font-size: 20px;
+                margin: 5% 18% 5% 18%;
             }
         }
         .segundo__Titulo{
             @include segundoTitulo;
             font-size: 30px;
         }
-        .parrafo__Index{
+        .parrafo{
             @include parrafosTablets;
             @include fuenteParrafos;
-            font-size: 16px;
+            font-size: 20px;
         }
+        ul{
+            .lista{
+                @include listasTablets;
+            }
+        }
+        .articulos{
+            @include articulosTablets;
+            @include marginTablets;
+            gap: 10%;
+            font-size: 20px;
+            .lubricante1{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante2{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante3{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante4{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
         footer{
-            font-size: 16px;
+            font-size: 20px;
             margin: 5% 18% 5% 18%;
+            @include footer;
+            }
         }
     }
-
 }
+/* ---------------------Celulares--------------------- */
 @media (min-width:320px) and (max-width:720px){
     .fondo{
         background-image: url(../Img/cuero.jpg);
         height: 100%;
-        .titulo__Pincipal{
+        .titulo__Principal{
             @include titulosPrincipal;
             font-size: 30px;
-            .barra__Inicio{
-                @include barraDeInicio;
-                .logo{
-                    width: 60px;
-                }
-                .enlaces__Navegacion{
-                    font-size: 14px;
-                    margin: 5% 18% 5% 18%;
-                }
+            }
+        .barra__Inicio{
+            @include barraDeInicioCelulares;
+            .logo{
+                grid-row: 1/3;
+                height: 100%;
+            }
+            .enlaces__Navegacion{
+                font-size: 18px;
+                margin: 5% 10% 5% 10%;
+                @include enlacesNavegacion;
             }
         }
         .segundo__Titulo{
             @include segundoTitulo;
             font-size: 20px;
         }
-        .parrafo__Index{
+        .parrafo{
             @include parrafoCelulares;
             @include fuenteParrafos;
-            font-size: 14px;
+            font-size: 18px;
         }
+        ul{
+            .lista{
+                @include listasTablets;
+            }
+        }
+        .articulos{
+            @include articulosCelulares;
+            @include marginCelulares;
+            gap: 10%;
+            font-size: 25px;
+            .lubricante1{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante2{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante3{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
+            .lubricante4{
+                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            }
         footer{
-            font-size: 14px;
+            font-size: 18px;
             margin: 5% 18% 5% 18%;
+            @include footer;
+            }
         }
     }
 }
