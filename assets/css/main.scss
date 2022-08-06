@@ -91,23 +91,29 @@ a {
             @include marginPC;
             gap: 10%;
             font-size: 25px;
-            .lubricante1{
-                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
-            }
-            .lubricante2{
-                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
-            }
-            .lubricante3{
-                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
-            }
-            .lubricante4{
-                background: linear-gradient(70deg, rgb(109, 56, 65), rgb(73, 73, 143))
+            a{
+                .lubricante1{
+                    height: 100px;
+                    width: 100px;
+                }
+                .lubricante2{
+                    height: 300px;
+                    width: 300px;
+                }
+                .lubricante3{
+                    height: 300px;
+                    width: 300px;
+                }
+                .lubricante4{
+                    height: 300px;
+                    width: 300px;
+                }
             }
         }
         footer{
             @include footer;
             font-size: 24px;
-            margin: 5% 18% 5% 18%;
+
         }
     }
 }
@@ -115,7 +121,7 @@ a {
 @media (min-width:720px) and (max-width:1024px){
     .fondo{
         background-image: url(../Img/cuero.jpg);
-        height: 100%;
+        height: 100vh;
         .titulo__Principal{
             @include titulosPrincipal;
             font-size: 40px;
@@ -164,7 +170,6 @@ a {
             }
         footer{
             font-size: 20px;
-            margin: 5% 18% 5% 18%;
             @include footer;
             }
         }
@@ -174,7 +179,7 @@ a {
 @media (min-width:320px) and (max-width:720px){
     .fondo{
         background-image: url(../Img/cuero.jpg);
-        height: 100%;
+        height: 100vh;
         .titulo__Principal{
             @include titulosPrincipal;
             font-size: 30px;
@@ -224,7 +229,6 @@ a {
             }
         footer{
             font-size: 18px;
-            margin: 5% 18% 5% 18%;
             @include footer;
             }
         }
